@@ -2,8 +2,9 @@ import UIKit
 
 class Employee {
     
-    var employeeName: String
-    var employeeProfile: Profile?
+   var employeeName: String?
+   unowned var employeeProfile: Profile?
+   
     
     init(_ name: String) {
         print("intialise function of Employee is called")
@@ -43,20 +44,21 @@ class Profile {
 // Create scope
 var employee1:Employee?
 var employee2:Employee?
-
+/*
 func intialseObjects() {
     
   let employee = Employee("Sonic")
+
       employee.printData()
       employee1 = employee /* will it  deinitalise or not  as we are assiging employee oject to other employee object*/
       employee2 = employee
       
-     // employee2 = nil
+      //employee2 = nil
      // employee1 = nil
     
 }
-//intialseObjects()
-
+intialseObjects()
+*/
 
 
 /* Strong Referance Cycle */
@@ -76,4 +78,5 @@ func strongRefereceCyle(){
 }
 
 strongRefereceCyle()
+ 
 // To Avoid the strong reference cycle we should use the [weak , unowned] while declaring properties
