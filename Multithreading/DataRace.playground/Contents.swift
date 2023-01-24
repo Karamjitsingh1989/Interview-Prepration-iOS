@@ -10,11 +10,11 @@ PlaygroundPage.current.needsIndefiniteExecution = true
  
 What is data race different from a race condition?
  
- What are Data Races?
+What are Data Races?
  
- Before we dive into the sanitizer, we first need to know what we’re actually looking for. We’re going to fix something that is called a Data Race.
+Before we dive into the sanitizer, we first need to know what we’re actually looking for. We’re going to fix something that is called a Data Race.
 
- Data races occur when the same memory is accessed from multiple threads without synchronization, and at least one access is a write. Data Races can lead to several issues:
+Data races occur when the same memory is accessed from multiple threads without synchronization, and at least one access is a write. Data Races can lead to several issues:
 
 
  
@@ -54,7 +54,7 @@ class PhoneStocks {
     
     func purchasePhone(phoneName: String) {
         
-        barrier.async(flags: .barrier) {
+       barrier.async(flags: .barrier) {
             guard let index = self.stocks.firstIndex(of: phoneName) else {
                 print("The phone is not available")
                 return

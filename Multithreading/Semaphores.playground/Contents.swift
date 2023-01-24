@@ -11,7 +11,7 @@ protocol Banking {
 }
 
 enum WithdrawalError: Error {
-case insufficientBalance
+     case insufficientBalance
 }
 
 var accountBalance: Double = 50000
@@ -26,7 +26,6 @@ struct AtmMachine: Banking {
         Thread.sleep(forTimeInterval: Double.random(in: 1...4))
         accountBalance -= amount
     }
-    
     func printMessage(){
         print("The amount from ATM Machine is withdrawal successfully, current Balance:\(accountBalance)")
     }
@@ -51,7 +50,7 @@ struct NetBanking: Banking {
 let queue = DispatchQueue(label: "SemaphoresDemo", qos: .utility, attributes: .concurrent)
 
 let semaphores = DispatchSemaphore(value: 1)
-
+/*
 queue.async {
     do {
         semaphores.wait()
@@ -89,7 +88,7 @@ queue.async {
         print("unknown Error")
     }
 }
-
+*/
 /* *********************************************************
      Priority Inversion with Dispatch Semaphores
    *********************************************************
@@ -145,13 +144,10 @@ struct RequestResourceModel {
 
 func requestForResource(resource: String, semphores: DispatchSemaphore, prioritySymbol: String) {
     print("\(prioritySymbol) is waiting for resource \(resource)")
-    semphores.wait()
+  //  semphores.wait()
    
-    /*
-      To Avoid the deadlock Condition we can use the request timeout
+     // To Avoid the deadlock Condition we can use the request timeout
       semphores.wait(timeout: DispatchTime.now() + .seconds(5))
-     
-     */
 }
 
 func prepareFoodItem(resourceModel: RequestResourceModel) {
@@ -173,9 +169,11 @@ let requestObject1 = RequestResourceModel(firstResource: "PAN", secondResource: 
 let requestObject2 = RequestResourceModel(firstResource: "OIL", secondResource: "PAN", prioritySymbol:  "🎂", semaphores1: semaphoresForLowPriority, semaphores2: semaphoresForHighPriority, queue: lowPriorityQueue2)
 
 //Uncomment the code for execution
-/*
+
 prepareFoodItem(resourceModel: requestObject1)
 prepareFoodItem(resourceModel: requestObject2)
-*/
+
+
+
 
 
