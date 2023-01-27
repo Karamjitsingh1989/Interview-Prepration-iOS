@@ -1,0 +1,56 @@
+[
+  {
+    "Id": 1,
+    "name": "Heros",
+    "Characters": [
+      {
+        "CharacterId": 1,
+        "name": "Sonic",
+        "photo":"sonic",
+        "description":"Sonic is a blue-colored hedgehog, a main leading character of an entire game franchise “Sonic The Hedgehog”. Sonic Character is designed and created by Yuji Naka and Naoto Ohshima. Sonic has a special power of running with very high speed like the wind."
+      },
+      {
+        "CharacterId":2 ,
+        "name": "Tails",
+        "photo":"tails",
+        "description":"Miles Prower is Sonic’s close friend character of the game franchise “Sonic the Hedgehog” and known as Tails. Miles Tails Prower is a young fox who uses his two tails to fly in the air like a helicopter. The character of Tails designed and created by Yasushi Yamaguchi the main designer of Sonic Team."
+      },
+      {
+        "CharacterId":4 ,
+        "name": "Amy Rose",
+        "photo":"Amy-Rose",
+        "description":"Amy rose is a hedgehog of pink color in the game series. She has a crush on lead character Sonic and believes she is a girlfriend of him. Amy Rose character is created and designed by Kenji Terada. She always stays with sonic in order to make sure he is safe. She has only one goal in his life to marry with sonic."
+      },
+      {
+        "CharacterId":5 ,
+        "name": "Cream",
+        "photo":"squirrel",
+        "description":"Cream is a cute rabbit and one of the characters of popular sonic game series. She is a friend of Chao and has a companion as Cheese another friend of Chao. Cream always follow manner taught by his mother vanilla.."
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "Enemy",
+    "Characters": [
+      {
+        "CharacterId": 30,
+        "name": "Doctor Eggman",
+        "photo":"dr-eggman",
+        "description":"Doctor Eggman is the main negative role character of the game series “Sonic The Hedgehog”. The character of Dr Eggman is designed and developed by Naoto Ohshima. Doctor Eggman is a crazed scientist who wants to rule over the world by making his own Empire."
+      },
+      {
+        "CharacterId": 222,
+        "name": "E 102 Gamma",
+        "photo":"e-102-gamma",
+        "description":"Doctor Eggman is the main negative role character of the game series “Sonic The Hedgehog”. The character of Dr Eggman is designed and developed by Naoto Ohshima. Doctor Eggman is a crazed scientist who wants to rule over the world by making his own Empire"
+      },
+      {
+        "CharacterId":3 ,
+        "name": "Knuckles The Echidna ",
+        "photo":"nakal",
+        "description":"Knuckles is red colored echidna and friendly rival of sonic. His aim is to protect Master Emerald from others. The ability to move and climb up on walls makes him a dominating warrior. Knuckles the echidna character is designed and developed by Takashi Yuda. He lives in a floating island named Angel Island. To attack an enemy, he rolls into a ball and smashes his powerful fists."
+      },
+    ]
+  }
+]
