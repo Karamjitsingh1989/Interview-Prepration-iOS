@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import XCTest
+@testable import JsonDecoder
+
+class JsonParseTest: XCTest {
+    
+    func TestOneJsonReponse(){
+        
+      XCTAssertEqual("1", "1")
+    }
+    
+    
+    
+}

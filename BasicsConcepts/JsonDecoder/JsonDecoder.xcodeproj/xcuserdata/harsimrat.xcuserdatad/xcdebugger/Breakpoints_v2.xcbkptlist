@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "66131B2C-49C3-4957-9635-0791333085DA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DDDFA9F-2C14-4ECD-A82A-ABE51A09431C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JsonDecoder/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getJsonData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DDDFA9F-2C14-4ECD-A82A-ABE51A09431C - 69069b47963c717e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JsonDecoder.ViewController.getJsonData() -&gt; ()"
+                  moduleName = "JsonDecoder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harsimrat/Documents/Interview-Prepration/Interview-Prepration-iOS/BasicsConcepts/JsonDecoder/JsonDecoder/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "7DDDFA9F-2C14-4ECD-A82A-ABE51A09431C - 69069b47963c717e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JsonDecoder.ViewController.getJsonData() -&gt; ()"
+                  moduleName = "JsonDecoder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harsimrat/Documents/Interview-Prepration/Interview-Prepration-iOS/BasicsConcepts/JsonDecoder/JsonDecoder/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7D3E671-241E-4C5C-B777-9C65E031A9A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JsonDecoder/Common/JsonParse.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "decodeLocalJsonFile(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E7D3E671-241E-4C5C-B777-9C65E031A9A8 - 6b26cd93ed4cf9e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static JsonDecoder.JsonParse.decodeLocalJsonFile(fileName: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "JsonDecoder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harsimrat/Documents/Interview-Prepration/Interview-Prepration-iOS/BasicsConcepts/JsonDecoder/JsonDecoder/Common/JsonParse.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "E7D3E671-241E-4C5C-B777-9C65E031A9A8 - 6b26cd93ed4cf9e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static JsonDecoder.JsonParse.decodeLocalJsonFile(fileName: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "JsonDecoder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harsimrat/Documents/Interview-Prepration/Interview-Prepration-iOS/BasicsConcepts/JsonDecoder/JsonDecoder/Common/JsonParse.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75406DC5-5183-4B3A-B40B-AD12E4AED8D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JsonDecoder/Common/EmployeeModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
