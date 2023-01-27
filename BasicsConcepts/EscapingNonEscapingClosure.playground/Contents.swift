@@ -4,9 +4,18 @@ import UIKit
  What are Non-Escaping closures?
  A closure is non-escaping closure by default in swift. With non-escaping means that a closure will not live or remain in memory once the function that calls this closure finish execution. So closure needs to be executed before its calling function finish execution
  
+ Non-escaping closure is used to perform operation which is not time consuming. Does not have dependency on another operation.
+ 
+ 
  
  What are Escaping closures?
  Escaping closure are exact opposite of non-escaping closures. Therefore, escaping closures will remain in memory after the function from which they gets called finish execution. You have seen escaping closures in case of API calls where code is running asynchronously and execution time is unknown.
+ In Escaping Closure is if we are adding any class/ func reference then for make it alive need to self
+ IF self added then it make the strong reference  which cause the memory leakage For avoiding the memory leakage we must make self as weak reference
+ e.g [weak self]
+ 
+    Escaping is used when operation cosuming sometime to perform Action eg API Calls
+ 
  */
 
 protocol PerformTask {
@@ -43,6 +52,7 @@ class ClosureDemo: PerformTask {
     func performAddAction(){
         print("Step1")
         addTwoNumbers(firstNumber: 3, secondNumber: 5) { result in
+           // testWeakReference()
             print("Addition Result: \(result)")
         }
         print("Final Step completed")
@@ -51,13 +61,17 @@ class ClosureDemo: PerformTask {
     func performSubAction() {
        
         print("Step1")
-        subTwoNumbers(firstNumber: 10, secondNumber: 3) { result in
+        subTwoNumbers(firstNumber: 10, secondNumber: 3) { [weak self] result in
+        
+            //self?.testWeakReference()
             print("Substraction Result: \(result)")
         }
         print("Final Step completed")
         
     }
-    
+    func testWeakReference(){
+        print("testing weak reference")
+    }
     
 }
 
