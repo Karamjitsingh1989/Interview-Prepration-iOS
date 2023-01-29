@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         
      // 2: isSingletonThreadSafe()
         
-      //3:
-        makeSingletonPatternThreadSafe()
+      //3: makeSingletonPatternThreadSafe()
     }
 
     
