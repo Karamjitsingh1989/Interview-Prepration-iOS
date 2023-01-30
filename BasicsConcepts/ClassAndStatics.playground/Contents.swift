@@ -54,3 +54,14 @@ struct Person1 {
     class var address: String = "Chandigarh"
     */
 }
+
+protocol Person2 {
+    
+    static var name: String? { get set }
+    
+    static func updateName()
+    /*
+     class func updateAddress()
+     class methods are only allowed within classes; use 'static' to declare a requirement fulfilled by either a static or class method
+     */
+}
