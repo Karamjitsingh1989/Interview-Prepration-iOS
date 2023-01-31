@@ -9,10 +9,7 @@ import Foundation
 
 
 class RequestViewService {
-    
-    
     func fetchRequestURLS(Completion:@escaping(Result<RequestURL, APIError>)-> Void){
         NetworkManager().httpRequest(url:AppConfig.baseURL , resultType:RequestURL.self , completion: Completion)
     }
-    
 }

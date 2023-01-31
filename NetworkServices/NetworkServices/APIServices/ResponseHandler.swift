@@ -8,7 +8,6 @@
 import Foundation
 
 class ResponseHandler {
-    
     func fetchModel<T:Codable>(data:Data, resultType: T.Type, completion:@escaping(Result<T, APIError>)->Void) {
         let response = try? JSONDecoder().decode(resultType.self, from: data)
         if let responseModel = response {

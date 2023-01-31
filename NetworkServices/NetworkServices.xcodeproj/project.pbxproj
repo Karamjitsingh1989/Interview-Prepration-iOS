@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				85E56554298923CA004D7E96 /* Models */,
-				85E5655129892316004D7E96 /* RequestViewModel */,
+				85E5655129892316004D7E96 /* Request */,
 				85E5654A298920DD004D7E96 /* APIServices */,
 				85E5654829890D09004D7E96 /* AppConfig.swift */,
 				85E565162988D4C2004D7E96 /* AppDelegate.swift */,
@@ -158,13 +158,13 @@
 			path = APIServices;
 			sourceTree = "<group>";
 		};
-		85E5655129892316004D7E96 /* RequestViewModel */ = {
+		85E5655129892316004D7E96 /* Request */ = {
 			isa = PBXGroup;
 			children = (
 				85E5655229892355004D7E96 /* RequestURLViewModel.swift */,
 				85E56558298929DE004D7E96 /* RequestViewService.swift */,
 			);
-			path = RequestViewModel;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		85E56554298923CA004D7E96 /* Models */ = {
