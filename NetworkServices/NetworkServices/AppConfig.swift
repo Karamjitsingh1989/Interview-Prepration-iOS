@@ -11,9 +11,3 @@ import Foundation
 struct AppConfig {
     static let baseURL = "https://rickandmortyapi.com/api"
 }
-
-struct RequestURL: Codable {
-    var characters: String
-    var locations: String
-    var episodes: String
-}

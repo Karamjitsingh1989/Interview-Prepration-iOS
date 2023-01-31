@@ -12,12 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NetworkManager().fetchResponseModel(url: AppConfig.baseURL, resultType:RequestURL.self) { response, error in
-            guard let responseOject = response, error == nil else {
-                return
-            }
-            print("URLS \(responseOject)")
-        }
+      
         // Do any additional setup after loading the view.
     }
 }

@@ -9,8 +9,8 @@ import Foundation
 
 class NetworkManager {
     
-  private  let apiHandler: APIHandler
-  private  let responseHandler: ResponseHandler
+    private  let apiHandler: APIHandler
+    private  let responseHandler: ResponseHandler
     
     init(apiHandler: APIHandler = APIHandler(), responseHandler: ResponseHandler = ResponseHandler()) {
         self.apiHandler = apiHandler
@@ -32,7 +32,7 @@ class NetworkManager {
                 break
             case .failure(let error):
                 print(error)
-          }
+            }
         }
     }
 }
