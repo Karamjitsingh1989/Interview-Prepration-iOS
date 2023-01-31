@@ -9,7 +9,7 @@ import Foundation
 
 class APIHandler {
     
-    func httpRequest(url: String, Completion:@escaping(Result<Data , APIError>)-> Void ) {
+    func fetchData(url: String, Completion:@escaping(Result<Data , APIError>)-> Void ) {
         guard let url = URL(string: url) else {
             return Completion(.failure(.BadURL))
         }

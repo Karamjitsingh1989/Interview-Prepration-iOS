@@ -10,11 +10,15 @@ import Foundation
 class RequestURLViewModel {
     
     static var requestURLS: RequestURL?
-    
-   static func getRickAndMortyURLS(){
-         NetworkManager().fetchResponseModel(url: AppConfig.baseURL, resultType: RequestURL.self) { response, error in
-            if let responseObject = response {
-                RequestURLViewModel.requestURLS = responseObject
+    static func getRickAndMortyURLS(){
+        RequestViewService().fetchRequestURLS { result in
+            switch result {
+            case .success(let object):
+                RequestURLViewModel.requestURLS = object
+                debugPrint(object)
+                break
+            case .failure(let error):
+                print("Unable to load Base URLS: \(error.localizedDescription)")
             }
         }
     }

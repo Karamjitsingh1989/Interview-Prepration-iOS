@@ -16,17 +16,17 @@ class NetworkManager {
         self.apiHandler = apiHandler
         self.responseHandler = responseHandler
     }
-    func fetchResponseModel<T:Codable>(url: String, resultType:T.Type, completion:@escaping(_ response:T? , _ error: Error?)->Void){
+    func httpRequest<T:Codable>(url: String, resultType:T.Type, completion:@escaping(Result<T ,APIError>)->Void){
         
-        self.apiHandler.httpRequest(url:url) { result in
+        self.apiHandler.fetchData(url:url) { result in
             switch result {
             case .success(let data):
-                self.responseHandler.getResponseModel(data: data, resultType: resultType.self) { result in
+                self.responseHandler.fetchModel(data: data, resultType: resultType.self) { result in
                     switch result {
                     case .success(let modelObj):
-                        completion(modelObj, nil)
+                        completion(.success(modelObj))
                     case .failure(let error):
-                        completion(nil, error)
+                        completion(.failure(error))
                     }
                 }
                 break

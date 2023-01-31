@@ -23,6 +23,7 @@
 		85E5655029892186004D7E96 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E5654F29892186004D7E96 /* APIError.swift */; };
 		85E5655329892355004D7E96 /* RequestURLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E5655229892355004D7E96 /* RequestURLViewModel.swift */; };
 		85E56557298923F9004D7E96 /* RequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E56556298923F9004D7E96 /* RequestURL.swift */; };
+		85E56559298929DE004D7E96 /* RequestViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E56558298929DE004D7E96 /* RequestViewService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		85E5654F29892186004D7E96 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		85E5655229892355004D7E96 /* RequestURLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestURLViewModel.swift; sourceTree = "<group>"; };
 		85E56556298923F9004D7E96 /* RequestURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestURL.swift; sourceTree = "<group>"; };
+		85E56558298929DE004D7E96 /* RequestViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				85E5655229892355004D7E96 /* RequestURLViewModel.swift */,
+				85E56558298929DE004D7E96 /* RequestViewService.swift */,
 			);
 			path = RequestViewModel;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				85E5654929890D09004D7E96 /* AppConfig.swift in Sources */,
 				85E5651B2988D4C2004D7E96 /* ViewController.swift in Sources */,
 				85E5654C298920FD004D7E96 /* APIHandler.swift in Sources */,
+				85E56559298929DE004D7E96 /* RequestViewService.swift in Sources */,
 				85E565172988D4C2004D7E96 /* AppDelegate.swift in Sources */,
 				85E5655029892186004D7E96 /* APIError.swift in Sources */,
 				85E565192988D4C2004D7E96 /* SceneDelegate.swift in Sources */,
