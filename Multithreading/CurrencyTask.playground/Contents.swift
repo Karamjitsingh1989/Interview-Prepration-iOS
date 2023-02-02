@@ -58,6 +58,7 @@ struct Source: Decodable{
 
 // MARK: Network Services Protocol
 
+ var count = 1
 protocol APIRequestProtocol {
     func apiRequest<T>(with url:URL, andModelObjectType type: T.Type) async throws -> Result<T, Error> where T: Decodable
     func handleResult(withResult result: Result<Data, Error>) async throws -> (Data?, Error?)
@@ -153,12 +154,14 @@ func main() async {
         return
     }
     let result = try? await NetworkManager().apiRequest(with: url, andModelObjectType: NewsStatus.self)
-    
+    count += 1 // for testing purpose
     do {
         let result = try? await service.apiRequest(with: url, andModelObjectType: NewsStatus.self)
         switch result {
         case .success(let creditScore):
             print(creditScore)
+            print(count)
+           
         case .failure(let error):
             print(error)
         case .none:
@@ -168,10 +171,43 @@ func main() async {
     }
 }
 
-// MARK: Perform Task
 Task {
     await main()
 }
 
 
 
+// MARK: Perform Task sequence
+/*
+Task {
+    for _ in 1...5 {
+        do {
+            try Task.checkCancellation()
+            await main()
+        }
+        catch {
+            print("Error Message:\(error)")
+        }
+    }
+}
+ */
+
+// MARK: Currency using Async group
+/*
+func groupCurrency() async throws {
+    
+    try await withThrowingTaskGroup(of: Void.self, body: { group in
+        for _ in 1...5{
+            group.async {
+               
+                await main()
+            }
+        }
+    })
+}
+
+
+Task {
+   try await groupCurrency()
+}
+*/
