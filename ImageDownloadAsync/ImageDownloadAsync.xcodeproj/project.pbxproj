@@ -21,6 +21,8 @@
 		852967AD298DFA9800B47611 /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967AC298DFA9800B47611 /* ResponseProtocol.swift */; };
 		852967B0298DFB1B00B47611 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967AF298DFB1B00B47611 /* HttpError.swift */; };
 		852967B2298DFC2800B47611 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B1298DFC2800B47611 /* ResponseHandler.swift */; };
+		852967B6298DFFF500B47611 /* RandomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B5298DFFF500B47611 /* RandomImage.swift */; };
+		852967B8298FE5D300B47611 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B7298FE5D300B47611 /* WebServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		852967AC298DFA9800B47611 /* ResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
 		852967AF298DFB1B00B47611 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		852967B1298DFC2800B47611 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		852967B5298DFFF500B47611 /* RandomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImage.swift; sourceTree = "<group>"; };
+		852967B7298FE5D300B47611 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		85296771298C98A600B47611 /* ImageDownloadAsync */ = {
 			isa = PBXGroup;
 			children = (
+				852967B4298DFFCF00B47611 /* View Model */,
+				852967B3298DFFC700B47611 /* Model */,
 				852967A3298DF86900B47611 /* Constants */,
 				8529679F298C9B7C00B47611 /* Networking */,
 				8529679C298C98BC00B47611 /* Services */,
@@ -147,6 +153,7 @@
 		8529679C298C98BC00B47611 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				852967B7298FE5D300B47611 /* WebServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,6 +209,21 @@
 				852967AF298DFB1B00B47611 /* HttpError.swift */,
 			);
 			path = HttpErrors;
+			sourceTree = "<group>";
+		};
+		852967B3298DFFC700B47611 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				852967B5298DFFF500B47611 /* RandomImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		852967B4298DFFCF00B47611 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +359,9 @@
 				85296775298C98A600B47611 /* ContentView.swift in Sources */,
 				852967A9298DFA4E00B47611 /* HttpClientProtocol.swift in Sources */,
 				852967B2298DFC2800B47611 /* ResponseHandler.swift in Sources */,
+				852967B8298FE5D300B47611 /* WebServices.swift in Sources */,
 				85296773298C98A600B47611 /* ImageDownloadAsyncApp.swift in Sources */,
+				852967B6298DFFF500B47611 /* RandomImage.swift in Sources */,
 				852967AB298DFA8600B47611 /* RequestProtocol.swift in Sources */,
 				852967B0298DFB1B00B47611 /* HttpError.swift in Sources */,
 				852967A7298DFA2600B47611 /* HttpRequestHandler.swift in Sources */,
