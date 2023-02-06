@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var randomImageList  = RandomImageListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(randomImageList.randomImages) { randomImage in
+            HStack {
+                
+                randomImage.image.map { image in
+                    Image(uiImage: image).resizable().aspectRatio(contentMode: .fit)
+                }
+                Text(randomImage.quote)
+            }
+            
+        }.task {
+            await randomImageList.getRandomImages(ids: Array(1...200))
         }
-        .padding()
     }
 }
 

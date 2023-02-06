@@ -10,11 +10,12 @@ import Foundation
 struct Constants {
     
     struct url {
-        static func getImageURL(id: String)->URL?{
-            return URL(string: "https://picsum.photos/id/\(id)/200/300")
+        static func getImageURL(id: Int)->URL?{
+            return URL(string: "https://picsum.photos/200/300?id=\(id)")
         }
         static func getRandomImageURL()->URL? {
-            return URL(string: "https://picsum.photos/seed/picsum/200/300")
+            return URL(string: "https://picsum.photos/200/300?uuid=\(UUID().uuidString)")
         }
+        static let randomQuoteUrl: URL?  = URL(string: "https://api.quotable.io/random")
     }
 }

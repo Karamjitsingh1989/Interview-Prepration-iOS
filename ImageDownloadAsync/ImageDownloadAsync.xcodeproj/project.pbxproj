@@ -23,6 +23,7 @@
 		852967B2298DFC2800B47611 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B1298DFC2800B47611 /* ResponseHandler.swift */; };
 		852967B6298DFFF500B47611 /* RandomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B5298DFFF500B47611 /* RandomImage.swift */; };
 		852967B8298FE5D300B47611 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852967B7298FE5D300B47611 /* WebServices.swift */; };
+		854B9916299099540034C559 /* RandomImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854B9915299099540034C559 /* RandomImageListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		852967B1298DFC2800B47611 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		852967B5298DFFF500B47611 /* RandomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImage.swift; sourceTree = "<group>"; };
 		852967B7298FE5D300B47611 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		854B9915299099540034C559 /* RandomImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		852967B4298DFFCF00B47611 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				854B9915299099540034C559 /* RandomImageListViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				852967B2298DFC2800B47611 /* ResponseHandler.swift in Sources */,
 				852967B8298FE5D300B47611 /* WebServices.swift in Sources */,
 				85296773298C98A600B47611 /* ImageDownloadAsyncApp.swift in Sources */,
+				854B9916299099540034C559 /* RandomImageListViewModel.swift in Sources */,
 				852967B6298DFFF500B47611 /* RandomImage.swift in Sources */,
 				852967AB298DFA8600B47611 /* RequestProtocol.swift in Sources */,
 				852967B0298DFB1B00B47611 /* HttpError.swift in Sources */,

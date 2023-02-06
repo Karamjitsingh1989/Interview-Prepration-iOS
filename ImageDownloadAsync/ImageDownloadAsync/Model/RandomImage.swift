@@ -11,6 +11,12 @@ struct RandomImage: Decodable {
     let image: Data
     let quote: Quote
 }
-struct Quote: Decodable {
-    let content: String
+
+// MARK: - 
+struct Quote : Decodable {
+    let id, content, author: String?
+    let tags: [String]?
+    let authorSlug: String?
+    let length: Int?
+    let dateAdded, dateModified: String?
 }
