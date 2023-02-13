@@ -1,10 +1,10 @@
 import UIKit
 
-/*
+/**
  
- Class vs statics
+    **class** vs **struct**
  
- static variable are declared as stored property where as class variable declared as computed property.
+     static variable are declared as stored property where as class variable declared as computed property.
  
  
  
@@ -51,7 +51,7 @@ struct Person1 {
     static var name: String = "Karamjit Singh"
    
    /* static property allowed in struct not class properties
-    class var address: String = "Chandigarh"
+      class var address: String = "Chandigarh"
     */
 }
 
