@@ -44,7 +44,7 @@ class Profile {
 // Create scope
 var employee1:Employee?
 var employee2:Employee?
-/*
+
 func intialseObjects() {
     
   let employee = Employee("Sonic")
@@ -58,7 +58,7 @@ func intialseObjects() {
     
 }
 intialseObjects()
-*/
+
 
 
 /* Strong Referance Cycle */

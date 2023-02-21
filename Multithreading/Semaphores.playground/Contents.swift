@@ -144,7 +144,7 @@ struct RequestResourceModel {
 
 func requestForResource(resource: String, semphores: DispatchSemaphore, prioritySymbol: String) {
     print("\(prioritySymbol) is waiting for resource \(resource)")
-  //  semphores.wait()
+   // semphores.wait()
    
      // To Avoid the deadlock Condition we can use the request timeout
       semphores.wait(timeout: DispatchTime.now() + .seconds(5))
