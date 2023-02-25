@@ -57,3 +57,5 @@ let auth =  AuthFactory.getCurrentUser(auth: authType)
 
 auth.signWith(email: "karamjitsingh1989@gmail.com", password: "1234321")
 
+auth.signWith(email: "Harsimrat@gmail.com", password: "12343")
+
